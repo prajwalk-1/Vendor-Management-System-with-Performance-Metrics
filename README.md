@@ -24,7 +24,7 @@ The Vendor Management System is a web application built using Django and Django 
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/prajwalk-1/vendor-management-system.git](https://github.com/prajwalk-1/Vendor-Management-System-with-Performance-Metrics.git)
+   git clone https://github.com/prajwalk-1/Vendor-Management-System-with-Performance-Metrics.git
    cd vendor-management-system
    ```
 
@@ -50,15 +50,15 @@ The Vendor Management System is a web application built using Django and Django 
 
 ## Usage
 
-### Admin Interface
+## Admin Interface
 
 1. Navigate to `http://127.0.0.1:8000/admin/` in your web browser.
 2. Log in with the superuser credentials created earlier.
 3. Manage vendors, purchase orders, and historical performance records through the admin interface.
 
-### API Endpoints
+## API Endpoints
 
-## Vendor Endpoints
+### Vendor Endpoints
 
 - **POST /api/vendors/**
   - Create a new vendor.
@@ -76,7 +76,7 @@ The Vendor Management System is a web application built using Django and Django 
 - **DELETE /api/vendors/{vendor_id}/**
   - Delete a vendor.
 
-## Purchase Order Endpoints
+### Purchase Order Endpoints
 
 - **POST /api/purchase_orders/**
   - Create a new purchase order.
@@ -95,19 +95,19 @@ The Vendor Management System is a web application built using Django and Django 
 - **DELETE /api/purchase_orders/{po_id}/**
   - Delete a purchase order.
 
-## Vendor Performance Endpoint
+### Vendor Performance Endpoint
 
 - **GET /api/vendors/{vendor_id}/performance/**
   - Retrieve the calculated performance metrics for a specific vendor.
   - Metrics include on_time_delivery_rate, quality_rating_avg, average_response_time, and fulfillment_rate.
 
-### Authentication
+## Authentication
 
 - API endpoints are secured with token-based authentication.
 - To obtain an authentication token:
   - Send a POST request to `/api/token/` with the superuser credentials.
   - Include the token in the Authorization header of subsequent requests: `Authorization: Token <token>`.
     
-### Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to open issues or submit pull requests for any improvements or features you'd like to see.
